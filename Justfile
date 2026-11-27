@@ -1,3 +1,4 @@
+set windows-shell := ["powershell.exe", "-NoLogo", "-NoProfile", "-Command"]
+
 test:
-    @echo "Add your project tests and update this recipe to run them."
-    @exit 1
+    node --test

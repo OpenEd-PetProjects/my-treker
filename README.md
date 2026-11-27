@@ -1,5 +1,14 @@
-# Pet project
+# Трекер привычек
 
-Record what you want to build and how you will know it works. Use the project brief in Loom to choose the first small task.
+Консольное приложение для добавления привычек и просмотра списка.
+Данные хранятся в памяти и исчезают после выхода.
 
-Update the `test` recipe in `Justfile` to run your project tests. The initial `just test` fails until you add a test command. GitHub Actions runs the same recipe on pushes and pull requests.
+Требуется Node.js 22 или новее. Сторонних зависимостей нет.
+
+Запуск: `node tracker.js`.
+
+Проверка вручную: выберите `1`, введите название привычки, повторите
+для второй привычки, затем выберите `2`. В списке должны появиться оба
+названия. Для выхода выберите `0`.
+
+Тесты: `node --test` или `just test`. GitHub Actions запускает `just test`.
